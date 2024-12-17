@@ -1,10 +1,17 @@
+/* definiamo le custom properties */
 body {
-    background-color: #011212;
+    background-color: var(--background-color);
 }
-
+:root{
+    --background-color: #023737;  /* Colore di sfondo */
+    --ball-size: 150px;           /* Dimensione della palla */
+    --ball-color: #ee7f00;        /* Colore della palla */
+    --ball-radius: 50%;           /* Arrotondamento dei bordi */
+}
+/* stile palla */
 .ball {
-    width: 100px;
-    height: 100px;
-    background-color: #ff8800;
-    border-radius: 50px;
+    width: var(--ball-size);
+    height: var(--ball-size);
+    background-color: var(--ball-color);
+    border-radius: var(--ball-radius);
 }
