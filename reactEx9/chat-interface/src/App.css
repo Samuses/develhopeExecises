@@ -1,0 +1,87 @@
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  overflow: hidden;
+  resize: none; /* Disabilitiamo il resize di default */
+}
+
+.message-list {
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+}
+
+.message-bubble {
+  max-width: 70%;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.message-bubble.right {
+  align-self: flex-end;
+  background-color: #007bff;
+  color: white;
+}
+
+.message-bubble.left {
+  align-self: flex-start;
+  background-color: #e0e0e0;
+}
+
+.input-area {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.input-area input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-area button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.input-area button:hover {
+  background-color: #0056b3;
+}
+
+/* Stile per la maniglia di resize */
+.resize-handle {
+  width: 15px;
+  height: 15px;
+  background-color: #ccc;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  cursor: se-resize;
+  border-radius: 50%;
+}
+.sender-selector {
+  padding: 5px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+}
